@@ -3,11 +3,11 @@
   "short_name": "Quran App",
   "start_url":"./",
   "display": "standalone",
-  "orientation": "potrait",
+  "orientation": "portrait",
   "icons":[
     {
       "src": "mushaf.png",
-      "size": "192x192",
+      "sizes": "192x192",
       "type":"image/png"
     }
     ]
