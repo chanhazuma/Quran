@@ -45,7 +45,6 @@ main{
   background-size: 300% 300%;
   animation: gradientMove 18s ease infinite;
   overflow: hidden;
-  padding-top: 100px;
 }
 .loading{
   background: #E4C1F9a0;
@@ -196,6 +195,7 @@ article{
   backdrop-filter: blur(5px);
   margin: 0 auto;
   position: fixed;
+  
   overflow: scroll;
 }
 .header{
