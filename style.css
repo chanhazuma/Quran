@@ -189,7 +189,7 @@ header{
 }
 article{
   width: 95%;
-  height: 65%;
+  height: 75vh;
   border: 1px solid white;
   border-radius: 12px;
   background: #ffffff20;
