@@ -11,7 +11,7 @@ let startx = 0;
 let endx = 0;
 function swipe(){
   let space = endx - startx;
-  if(space > 80){
+  if(space > 120){
     halaman += 1;
   localStorage.setItem('halamanterakhir', String(halaman));
   if(mode.value === "arabic"){
@@ -19,7 +19,7 @@ function swipe(){
   }else if(mode.value === "translation"){
     tampilkantr();
   }
-}else if(space < -80){
+}else if(space < -120){
   halaman -= 1;
   localStorage.setItem('halamanterakhir', String(halaman));
   if(mode.value === "arabic"){
