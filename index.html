@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>quran</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="rotate-warning">
+    Hanya bisa diakses dengan mode potrait ↻📲
+  </div>
+  <div class="loading" id="loading">
+    <section class="loading-animation">
+    </section>
+    <h3>Memuat...</h3>
+  </div>
+  <main>
+    <header>
+      <div class="logo">
+        <img src="mushaf.png" alt="quran" height="120%">
+        <h3>mushaf.hazuma.my.id</h3>
+      </div>
+      <div class="navigasi">
+        <h4>mode</h4>
+        <select name="mode" id="mode">
+          <option value="arabic">arabic only</option>
+          <option value="translation">translate</option>
+        </select>
+      </div>
+    </header>
+    <article id="content">
+      <section class="header">
+        <div id="surah" class="balon surah">
+          
+        </div>
+      <div>
+        <audio src="Alafasy_128kbps_Halaman_001.mp3" id="audio"></audio>
+        <button id="play" class="balon audio">▶</button>
+      <input type="number" class="balon halaman" id="halaman">
+      </div>
+      </section>
+      <section id="tampil">
+        
+      </section>
+    </article>
+    <footer>
+      <p class="footer">&copy;hazuma_chan All Right Reserved</p>
+    </footer>
+  </main>
+  <script src="variable.js"></script>
+  <script src="ambildata.js"></script>
+  <script src="logicmode.js"></script>
+  <script src="logichalaman.js"></script>
+  <script src="logicaudio.js"></script>
+  <script src="main_translate.js"></script>
+  <script src="main_arabic.js"></script>
+  <script>
+    navigator.swrviceWorker.register("sw.js");
+  </script>
+</body>
+</html>

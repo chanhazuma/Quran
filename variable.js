@@ -1,0 +1,12 @@
+const header = document.querySelector('header');
+const article = document.querySelector('#content');
+const footer = document.querySelector('footer');
+const loading = document.querySelector('#loading');
+const nav = document.querySelector('.navigasi');
+let mode = document.querySelector('#mode');
+let surah = document.querySelector('#surah');
+let halaman = Number(localStorage.getItem('halamanterakhir') ?? "1");
+let maqra = document.querySelector('#tampil');
+let audio = document.getElementById("audio");
+let audiobtn = document.getElementById("play");
+let audioset = "pss";
