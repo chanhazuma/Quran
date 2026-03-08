@@ -181,6 +181,7 @@ header{
   outline: 1.5px solid white;
   outline-offset: 1px;
   border: none;
+  padding: 0 5px;
 }
 .navigasi select:focus{
   outline: 1.5px solid lightblue;
