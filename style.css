@@ -195,7 +195,7 @@ article{
   background: #ffffff20;
   backdrop-filter: blur(5px);
   margin: 0 auto;
-  position: relative;
+  position: fixed;
   overflow: scroll;
 }
 .header{
