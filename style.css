@@ -35,6 +35,7 @@
 }
 main{
   width: 100vw;
+  height: 100vh;
   background: linear-gradient(
     120deg,
     #E0EAFC,
@@ -188,7 +189,7 @@ header{
 }
 article{
   width: 95%;
-  height: 650px;
+  
   border: 1px solid white;
   border-radius: 12px;
   background: #ffffff20;
