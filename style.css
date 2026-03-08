@@ -299,3 +299,7 @@ article{
   justify-content: center;
   align-items: center;
 }
+footer{
+  display: flex;
+  bottom: 0px;
+}
