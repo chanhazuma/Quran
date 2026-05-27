@@ -12,6 +12,7 @@ audiobtn.addEventListener("click", function(){
 });
 audio.addEventListener("ended", function(){
     halaman += 1;
+    tambahHalaman();
   localStorage.setItem('halamanterakhir', String(halaman));
   if(mode.value === "arabic"){
     tampilkanar();
