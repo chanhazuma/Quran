@@ -42,11 +42,11 @@ function kurangHalaman(){
   article.classList.add("pindahHalaman");
   setTimeout(function(){
     article.classList.remove("pindahHalaman");
-  }, 500);
+  }, 50);
 }
 function tambahHalaman(){
   article.classList.add("pindahHalaman");
   setTimeout(function(){
     article.classList.remove("pindahHalaman");
-  }, 500);
+  }, 50);
 }
