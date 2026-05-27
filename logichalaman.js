@@ -39,8 +39,14 @@ maqra.addEventListener("touchend", function(e){
   swipe();
 });
 function kurangHalaman(){
-  article.classList.add("kurangHalaman");
+  article.classList.add("pindahHalaman");
+  setTimeout(function(){
+    article.classList.remove("pindahHalaman");
+  }, 500);
 }
 function tambahHalaman(){
-  article.classList.add("tambahHalaman");
+  article.classList.add("pindahHalaman");
+  setTimeout(function(){
+    article.classList.remove("pindahHalaman");
+  }, 500);
 }
