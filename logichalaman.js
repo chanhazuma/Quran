@@ -13,6 +13,7 @@ function swipe(){
   let space = endx - startx;
   if(space > 120){
     halaman += 1;
+    tambahHalaman();
   localStorage.setItem('halamanterakhir', String(halaman));
   if(mode.value === "arabic"){
     tampilkanar();
@@ -21,6 +22,7 @@ function swipe(){
   }
 }else if(space < -120){
   halaman -= 1;
+  kurangHalaman();
   localStorage.setItem('halamanterakhir', String(halaman));
   if(mode.value === "arabic"){
     tampilkanar();
