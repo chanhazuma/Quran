@@ -38,3 +38,9 @@ maqra.addEventListener("touchend", function(e){
   endx = e.changedTouches[0].clientX;
   swipe();
 });
+function kurangHalaman(){
+  
+}
+function tambahHalaman(){
+  
+}
