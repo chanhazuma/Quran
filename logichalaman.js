@@ -11,7 +11,7 @@ let startx = 0;
 let endx = 0;
 function swipe(){
   let space = endx - startx;
-  if(space > 120){
+  if(space > 70){
     halaman += 1;
     tambahHalaman();
   localStorage.setItem('halamanterakhir', String(halaman));
@@ -20,7 +20,7 @@ function swipe(){
   }else if(mode.value === "translation"){
     tampilkantr();
   }
-}else if(space < -120){
+}else if(space < -70){
   halaman -= 1;
   kurangHalaman();
   localStorage.setItem('halamanterakhir', String(halaman));
@@ -39,8 +39,8 @@ maqra.addEventListener("touchend", function(e){
   swipe();
 });
 function kurangHalaman(){
-  
+  article.classList.add("kurangHalaman");
 }
 function tambahHalaman(){
-  
+  article.classList.add("tambahHalaman");
 }
