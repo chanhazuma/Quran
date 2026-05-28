@@ -40,13 +40,15 @@ maqra.addEventListener("touchend", function(e){
 });
 function kurangHalaman(){
   article.classList.add("pindahHalaman");
+  main.classList.add("kurangHalaman");
   setTimeout(function(){
     article.classList.remove("pindahHalaman");
-  }, 1100);
+  }, 570);
 }
 function tambahHalaman(){
   article.classList.add("pindahHalaman");
+  main.classList.add("tambahHalaman");
   setTimeout(function(){
     article.classList.remove("pindahHalaman");
-  }, 1100);
+  }, 570);
 }
