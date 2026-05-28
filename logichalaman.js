@@ -43,6 +43,7 @@ function kurangHalaman(){
   main.classList.add("kurangHalaman");
   setTimeout(function(){
     article.classList.remove("pindahHalaman");
+    main.classList.remove("kurangHalaman");
   }, 570);
 }
 function tambahHalaman(){
@@ -50,5 +51,6 @@ function tambahHalaman(){
   main.classList.add("tambahHalaman");
   setTimeout(function(){
     article.classList.remove("pindahHalaman");
+    main.classList.remove("tambahHalaman");
   }, 570);
 }
