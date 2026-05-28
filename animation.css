@@ -1,3 +1,13 @@
 .pindahHalaman{
   width: 5px!important;
 }
+.kurangHalaman{
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: flex-start!important;
+}
+.tambahHalaman{
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: flex-end!important;
+}
