@@ -1,3 +1,4 @@
+const main = document.getElementById("main");
 const header = document.querySelector('header');
 const article = document.querySelector('#content');
 const footer = document.querySelector('footer');
