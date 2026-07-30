@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background: linear-gradient(
+    120deg,
+    #E0EAFC,
+    #CFDEF3,
+    #E4C1F9
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 12s ease infinite;
+}
+@keyframes gradientMove{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+.hidden{
+    display: none!important;
+}
+.loading, .splash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 99;
+}
+#loading, #splash{
+    height: 40%;
+    aspect-ratio: 1/1;
+}
+
+/* Header */
+.header{
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100dvw;
+    max-height: 15vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    padding: 5px 8px;
+    background: #ffffff;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    border: 3px double pink;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+    user-select: none;
+    z-index: 98;
+}
+.header-off{
+    top: 10px;
+    left: 10px;
+    width: 50px!important;
+    aspect-ratio: 1/1!important;
+    padding: 5px!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    border-radius: 50%!important;
+    position: absolute!important;
+    user-select: none!important;
+    touch-action: none!important;
+    border: 2px solid #ffffff;
+    background: #00000050;
+}
+.header.geser{
+    transition: transform 1.5s ease-in-out!important;
+}
+.logo{
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 50%;
+}
+.headerText{
+    text-align: left;
+    font-family: "DynaPuff", system-ui;
+    font-size: 2vw;
+}
+.mode{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#mode{
+    border-radius: 12px;
+    font-family: "DynaPuff", system-ui;
+    border: 1.5px solid pink;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: small;
+    outline: none;
+}
+#mode:focus{
+    border: 2.5px solid lightblue;
+}
+.headerMode{
+    text-align: center;
+    font-size: x-small;
+    font-family: "DynaPuff", system-ui;
+}
+.page{
+    height: 100dvh;
+    overflow: hidden;
+}
+
+/* Page */
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+    padding: 8px 5px;
+    gap: 5px;
+    overflow-y: scroll;
+}
+.page-header{
+    display: flex;
+    width: 98%;
+    height: 40px;
+    padding: 2px 8px;
+    border: 1px solid violet;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+}
+.page-header>div{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputPage{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    font-size: 3.5vw;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+#pageId, #surahId{
+    border-radius: 14px;
+    background-color: blueviolet;
+    color:  white;
+}
+#surahId{
+    font-size: 4.5vw;
+}
+#audioPageControl{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+    border: none;
+}
+#audioPageControl>button{
+    height: 95%;
+    aspect-ratio: 1/1;
+    background-color: blueviolet;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#audioPageControl>button>img{
+    height: 95%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+#page, #pageTr{
+    width: 98%;
+    max-height: calc(100dvh - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1.5px solid white; 
+    border-radius: 12px; 
+    background-color: #ffffff15;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#pageTr{
+    padding:  8px 5px;
+    gap: 5px;
+}
+#pageTr>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 5px;
+    border-bottom: 2px solid black;
+    margin: 3px 2px;
+}
+.tTr{
+    font-size: small;
+    font-family: "DynaPuff", system-ui;
+}
+.tAr{
+    text-align: right;
+    width: 100%;
+}
+.TB{
+    margin: 5px;
+    display: inline-block;
+    width: 80%;
+    padding: 3px;
+    border: 2px solid violet;
+    border-radius: 12px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
