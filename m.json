@@ -1,0 +1,22 @@
+{
+    "name": "Hazuma Qur'an",
+    "short_name": "My Mushaf",
+    "description": "Mushaf Digital",
+    "start_url": "/",
+    "background_color": "#E4C1F9",
+    "theme_color": "#E4C1F9",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "png/LogoMushaf.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "png/LogoMushaf.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
