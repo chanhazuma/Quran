@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazuma App | Mushaf</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="png/LogoMushaf.png">
+    <link rel="manifest" href="m.json">
+</head>
+<body>
+    <!-- Install, Loadng and Splash -->
+     <div id="install">
+        <p>Install Hazuma Qur'an App</p>
+        <button onclick="pasang()" id="btnI">Install</button>
+     </div>
+    <div class="loading"><img src="loading/0001.png" id="loading"></div>
+    <div class="splash"><img src="png/LogoMushaf.png" id="splash"></div>
+
+    <header class="header">
+        <img src="png/LogoMushaf.png" class="logo">
+        <section class="headerText header-content">
+            <h1>Al-Qur'an Al-Karim</h1>
+            <h2>Mushaf Digital</h2>
+        </section>
+        <form class="mode header-content">
+            <label for="mode" class="headerMode">Select Mode</label>
+            <select name="mode" id="mode">
+              <option value="ar">Arabic</option>
+              <option value="tr">TR</option>
+            </select>
+        </form>
+    </header>
+    <article class="page" id="body">
+        <section class="page-header">
+            <div id="pageId"><input type="number" value="1" id="inputPage" min="1" max="604"></div>
+            <div id="surahId">An-Nisa'</div>
+            <div id="audioPageControl">
+                <button id="before"><img src="svg/back.svg" alt=""></button>
+                <button id="play"><img id="porp" src="svg/play.svg" alt=""></button>
+                <button id="after"><img src="svg/next.svg" alt=""></button>
+            </div>
+        </section>
+        <audio src="misyary/Page001.mp3" id="murattal" style="display: none;"></audio>
+        <img src="mushaf-per-page/Quran-PNG-master/077.png" id="page">
+        <div id="pageLoad"></div>
+        <div id="pageTr"></div>
+    </article>
+    <script src="js/script.js"></script>
+</body>
+</html>
